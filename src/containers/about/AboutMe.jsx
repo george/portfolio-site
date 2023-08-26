@@ -69,8 +69,8 @@ export default function AboutMe() {
     ]);
 
     return (
-        <div className='h-5/6 mt-[15vh] text-center'>
-            <div className='text-4xl font-bold text-white'>
+        <div className='h-5/6 text-center background'>
+            <div className='text-4xl py-[15%] font-bold text-white' id='about'>
                 About Me
 
                 <div className='mt-5 mx-auto w-[min(600px,_80%)] text-lg font-seibold text-gray-200'>
@@ -89,7 +89,6 @@ export default function AboutMe() {
                     </div>
                 </div>
             </div>
-            <div id='about'/>
         </div>
     )
 }

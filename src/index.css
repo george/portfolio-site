@@ -26,6 +26,14 @@ body {
   background-image: url('/public/background.svg');
 }
 
+.leaves-background {
+  background-image: url('/public/leaves-background.svg');
+}
+
+.bubbles-background {
+  background-image: url('/public/bubbles-background.svg');
+}
+
 *::-webkit-scrollbar {
   width: 15px;
 }

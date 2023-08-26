@@ -2,7 +2,7 @@ import Statistic from "../../components/statistic/Statistic";
 
 export default function Hero() {
     return (
-        <div className='h-[100vh] text-white background text-center'>
+        <div className='h-[100vh] text-white leaves-background text-center'>
             <div className='pt-[10%] text-6xl font-extrabold text-white'>
                 <span>
                     I'm <span className='text-transparent bg-clip-text bg-gradient-to-r from-secondary
@@ -18,7 +18,7 @@ export default function Hero() {
                 Some quick stats about me...
             </div>
 
-            <div className='bg-neutral-800 mx-[20%] mt-[2%] rounded-lg pb-8 pt-0.5'>
+            <div className='bg-neutral-800 mx-[20%] mt-[2%] rounded-xl pb-8 pt-0.5'>
                 <div className='mx-[5%] md:grid md:grid-cols-3 lg:grid-cols-3'>
                     <Statistic info='4+' name='Years Of Experience'/>
                     <Statistic info='20+' name='Premium Projects'/>
