@@ -63,7 +63,7 @@ export const Projects:React.FC = () => {
                                  languages={[
                                      LanguageColor.Python
                                  ]}/>
-                        <Project name='Java Native Obfuscation Study' description='A study performed to measure the effects
+                        <Project name='Java Native Study' description='A study performed to measure the effects
                         and performance impacts of natively obfuscating a Java application. This research showed that, while
                         performance was significantly decreased in almost all categories, IO performance was significantly
                         improved when done through native JNI calls.'

@@ -2,7 +2,9 @@ import * as React from 'react';
 import { useState } from 'react';
 
 import { AboutMeSection } from '../../components/about/AboutMeSection';
+import {SkillSet} from "../../components/skill/SkillSet";
 
+const listStyles = 'font-normal text-base list-disc list-inside';
 export const AboutMe:React.FC = () => {
     const [sections] = useState<React.ReactElement[]>([
         <AboutMeSection title='Who am I' contents={
@@ -23,42 +25,65 @@ export const AboutMe:React.FC = () => {
         }/>,
         <AboutMeSection title='Skills' contents={
             <div>
-                <p className='font-bold'>
-                    Development: <span className='font-normal'>Frontend development, backend development, mobile app
-                    development, native app development</span>
-                </p>
-                <p className='font-bold'>
-                    Cloud Computing : <span className='font-normal'>AWS (ECS, ECR, S3, Amplify, RDS, etc)</span>
-                </p>
-                <p className='font-bold'>
-                    Database Management : <span className='font-normal'>SQL / Relational DBs (MySQL, MSSQL, Postgres), MongoDB</span>
-                </p>
+                <SkillSet name='Development' skills={[
+                    'Frontend web development',
+                    'Backend web development',
+                    'Mobile app development',
+                    'Desktop app development',
+                    'Native app development'
+                ]}/>
+                <SkillSet name='Cloud Computing' skills={[
+                    'AWS (ECS, S3, Amplify, RDS, etc)'
+                ]}/>
+                <SkillSet name='Database Management' skills={[
+                    'SQL (MySQL / MSSQL / Postgres)',
+                    'MongoDB / NoSQL'
+                ]}/>
             </div>
         }/>,
         <AboutMeSection title='Frontend Technologies' contents={
             <div>
-                <p className='font-bold'>
-                    Languages / Tools: <span className='font-normal'>HTML, CSS, Dart, JavaScript</span>
-                </p>
-                <p className='font-bold'>
-                    Frameworks: <span className='font-normal'>React.js, Next.js, TailwindCSS, Flutter, Electron</span>
-                </p>
+                <SkillSet name='Languages / Tools' skills={[
+                    'HTML / CSS',
+                    'JavaScript',
+                    'Dart',
+                ]}/>
+                <SkillSet name='Frameworks' skills={[
+                    'React.js / Next.js',
+                    'TailwindCSS',
+                    'Electron',
+                    'Flutter'
+                ]}/>
             </div>
         }/>,
         <AboutMeSection title='Backend Technologies' contents={
             <div>
-                <p className='font-bold'>
-                    Languages: <span className='font-normal'>Java, JavaScript, TypeScript, Python, C++, PHP</span>
-                </p>
-                <p className='font-bold'>
-                    Frameworks: <span className='font-normal'>Node.js, Express.js, Flask, Spring MVC, Laravel</span>
-                </p>
-                <p className='font-bold'>
-                    Other Technologies: <span className='font-normal'>Websockets, Microservices, Selenium, Maven, Gradle, NPM</span>
-                </p>
-                <p className='font-bold'>
-                    Data Storage : <span className='font-normal'>SQL / Relational DBs, MongoDB / NoSQL, Redis</span>
-                </p>
+                <SkillSet name='Languages' skills={[
+                    'Java',
+                    'JavaScript',
+                    'TypeScript',
+                    'Python',
+                    'C++',
+                    'Laravel'
+                ]}/>
+                <SkillSet name='Frameworks' skills={[
+                    'Node.js / Express.js',
+                    'Flask',
+                    'Spring MVC',
+                    'Laravel'
+                ]}/>
+                <SkillSet name='Other Technologies' skills={[
+                    'Microservices',
+                    'Websockets',
+                    'Selenium',
+                    'Maven / Gradle'
+                ]}/>
+                <SkillSet name='Databases / Data Storage' skills={[
+                    'MySQL / MariaDB / Postgres',
+                    'Microsoft SQL Server',
+                    'NoSQL / MongoDB',
+                    'Redis'
+                ]}/>
             </div>
         }/>,
         <AboutMeSection title='Operating Systems' contents={

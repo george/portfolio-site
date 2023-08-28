@@ -30,7 +30,7 @@ export const AboutMeSection:React.FC<AboutMeProps> = (props: AboutMeProps) => {
                         {props.title}
                     </span>
                     <motion.div initial={false} animate={animationData} className='overflow-hidden text-gray-200'>
-                        <div className='text-xl text-gray-200 mx-5'>{props.contents}</div>
+                        <div className='text-lg text-gray-200 mx-3'>{props.contents}</div>
                     </motion.div>
                 </motion.div>
             </button>
