@@ -1,8 +1,10 @@
-import NavElement from '../../components/nav/NavElement';
+import * as React from 'react';
 
-export default function Navbar() {
+import { NavElement } from '../../components/nav/NavElement';
+
+export const Navbar:React.FC = () => {
     return (
-        <nav className='w-[100%] border-b-2 border-[#242424] bg-[#121212] pb-4 sticky top-0'>
+        <nav className='w-[100%] border-b-2 border-[#242424] bg-[#121212] pb-4 sticky top-0 z-10'>
             <div className='mt-5 max-w-fit flex items-center mx-auto font-extrabold text-white text-xl'>
                 <a className='flex' href='#home'>
                     <img src='/logo.png' className='rounded-full' alt='g-logo' width='48'/>

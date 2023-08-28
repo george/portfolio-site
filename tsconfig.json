@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "outDir": "./ts-build",
+    "allowJs": true,
+    "target": "es6",
+    "moduleResolution": "Node",
+    "jsx": "react"
+  },
+  "include": ["./src/**/*"]
+}

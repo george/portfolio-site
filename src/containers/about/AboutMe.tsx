@@ -1,14 +1,15 @@
+import * as React from 'react';
 import { useState } from 'react';
 
-import AboutMeSection from '../../components/about/AboutMeSection';
+import { AboutMeSection } from '../../components/about/AboutMeSection';
 
-export default function AboutMe() {
-    const [sections] = useState([
+export const AboutMe:React.FC = () => {
+    const [sections] = useState<React.ReactElement[]>([
         <AboutMeSection title='Who am I' contents={
             <div>
                 <p className='font-normal'>
                     I'm an 18 year old software engineer from Texas. I've been coding
-                    since 2019, where I started with Java. I've loved coding ever since.
+                    since 2019, where I started with Java, and I've loved it ever since.
                 </p>
             </div>
         }/>,
@@ -27,10 +28,10 @@ export default function AboutMe() {
                     development, native app development</span>
                 </p>
                 <p className='font-bold'>
-                    Cloud Computing : <span className='font-normal'>AWS (ECS, ECR, EC2, S3, Amplify, etc)</span>
+                    Cloud Computing : <span className='font-normal'>AWS (ECS, ECR, S3, Amplify, RDS, etc)</span>
                 </p>
                 <p className='font-bold'>
-                    Database Management : <span className='font-normal'>SQL / Relational DBs, MongoDB</span>
+                    Database Management : <span className='font-normal'>SQL / Relational DBs (MySQL, MSSQL, Postgres), MongoDB</span>
                 </p>
             </div>
         }/>,
@@ -47,17 +48,16 @@ export default function AboutMe() {
         <AboutMeSection title='Backend Technologies' contents={
             <div>
                 <p className='font-bold'>
-                    Languages: <span className='font-normal'>Java, JavaScript, Python, C++</span>
+                    Languages: <span className='font-normal'>Java, JavaScript, TypeScript, Python, C++, PHP</span>
                 </p>
                 <p className='font-bold'>
-                    Frameworks: <span className='font-normal'>Node.js, Express.js, Flask</span>
+                    Frameworks: <span className='font-normal'>Node.js, Express.js, Flask, Spring MVC, Laravel</span>
                 </p>
                 <p className='font-bold'>
-                    Other Technologies: <span className='font-normal'>Websockets, Selenium, Maven, Gradle, NPM, JSON, Unit Testing</span>
+                    Other Technologies: <span className='font-normal'>Websockets, Microservices, Selenium, Maven, Gradle, NPM</span>
                 </p>
                 <p className='font-bold'>
-                    Data Storage : <span className='font-normal'>SQL and other relational database software, MongoDB / NoSQL,
-                    Redis</span>
+                    Data Storage : <span className='font-normal'>SQL / Relational DBs, MongoDB / NoSQL, Redis</span>
                 </p>
             </div>
         }/>,
@@ -69,7 +69,7 @@ export default function AboutMe() {
     ]);
 
     return (
-        <div className='h-5/6 text-center background'>
+        <div className='h-5/6 text-center background-leaves'>
             <div className='text-4xl py-[15%] font-bold text-white' id='about'>
                 About Me
 
@@ -78,13 +78,13 @@ export default function AboutMe() {
                     and the list is always growing.
 
                     <br/>
-                    
+
                     I'm always looking to pick up new skills!
                 </div>
                 <div className='mx-[5%] mt-5 w-[90%] rounded-xl bg-neutral-800'>
                     <div className='md:grid md:grid-cols-3 lg:grid-cols-3'>
                         {sections.map(section => {
-                            return <div className='mt-1' key={section.props.title}>{section}</div>
+                            return <div className='my-2' key={section.props.title}>{section}</div>
                         })}
                     </div>
                 </div>

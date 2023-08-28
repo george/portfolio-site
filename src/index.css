@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,7 +7,7 @@
 body {
   margin: 0;
 
-  font-family: 'Alata', sans-serif;
+  font-family: 'Oxygen', sans-serif;
   color: #dddddd;
 
   -webkit-font-smoothing: antialiased;
@@ -22,15 +22,20 @@ body {
   scroll-behavior: smooth;
 }
 
-.background {
+.background-clouds {
   background-image: url('/public/background.svg');
 }
 
-.leaves-background {
+.background-waves {
+  background-position: right;
+  background-image: url('/public/background-waves.svg');
+}
+
+.background-leaves {
   background-image: url('/public/leaves-background.svg');
 }
 
-.bubbles-background {
+.background-bubbles {
   background-image: url('/public/bubbles-background.svg');
 }
 
