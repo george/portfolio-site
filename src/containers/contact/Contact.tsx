@@ -29,7 +29,7 @@ export const Contact:React.FC = () => {
                 <div className='text-4xl font-extrabold'>
                     Looking to get in touch?
                 </div>
-                <div className='text-lg font-normal'>
+                <div className='text-lg font-normal mx-4'>
                     <div className='mt-6'>
                         My best contact method is through my email, <a className='underline'
                                                                        href='mailto:george@hostile.org'>george@hostile.org</a>.
