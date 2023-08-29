@@ -27,8 +27,9 @@ body {
 }
 
 .background-waves {
-  background-position: right;
+  background-position: right top;
   background-image: url('/public/background-waves.svg');
+  background-repeat: no-repeat;
 }
 
 .background-leaves {
