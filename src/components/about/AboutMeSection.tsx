@@ -24,13 +24,13 @@ export const AboutMeSection:React.FC<AboutMeProps> = (props: AboutMeProps) => {
 
     return (
         <motion.div animate={open ? 'open' : 'closed'} className='pt-2 pb-5'>
-            <button onClick={() => setOpen(!open)} className='items-center justify-between'>
+            <button onClick={() => setOpen(!open)} className='items-center justify-between text-white'>
                 <motion.div animate={open ? 'open' : 'closed'}>
-                    <span className={'text-center text-xl text-gray-200 font-medium'}>
+                    <span className={'text-center text-xl font-medium'}>
                         {props.title}
                     </span>
-                    <motion.div initial={false} animate={animationData} className='overflow-hidden text-gray-200'>
-                        <div className='text-lg text-gray-200 mx-3'>{props.contents}</div>
+                    <motion.div initial={false} animate={animationData} className='overflow-hidden'>
+                        <div className='text-lg mx-3'>{props.contents}</div>
                     </motion.div>
                 </motion.div>
             </button>

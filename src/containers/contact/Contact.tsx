@@ -15,6 +15,11 @@ const socialMediaPlatforms:SocialMediaPlatform[] = [
         platformLink: 'https://github.com/george'
     },
     {
+        name: 'Chess',
+        iconUrl: '/logos/chess.png',
+        platformLink: 'https://chess.com/members/glove'
+    },
+    {
         name: 'Twitter / X',
         iconUrl: '/logos/x-logo.png',
         platformLink: 'https://twitter.com/@rigatoni'
@@ -39,12 +44,16 @@ export const Contact:React.FC = () => {
                         I can also be reached at the following socials:
                     </div>
 
-                    <div className='inline-flex'>
-                        { socialMediaPlatforms.map((platform) => {
-                            return <a href={platform.platformLink}>
-                                <img className='mt-5 rounded-full mx-auto mr-5' src={platform.iconUrl} alt={platform.name + ' Logo'} width={64}/>
-                            </a>
-                        })}
+                    <div className='mt-8 mx-[10%] lg:mx-[30%] bg-gray-800 rounded-xl'>
+                        <ul className='px-[4%] inline-flex flex-wrap flex-row gap-x-2 gap-y-2 mb-4'>
+                            { socialMediaPlatforms.map((platform) => {
+                                return <li>
+                                    <a href={platform.platformLink}>
+                                        <img className='mt-5 rounded-full mx-auto mr-5' src={platform.iconUrl} alt={platform.name + ' Logo'} width={64}/>
+                                    </a>
+                                </li>
+                            })}
+                        </ul>
                     </div>
                 </div>
             </div>

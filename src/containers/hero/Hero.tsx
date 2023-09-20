@@ -20,10 +20,10 @@ export const Hero:React.FC = () => {
                 Some quick stats about me...
             </div>
 
-            <div className='bg-neutral-800 mx-[20%] mt-[2%] rounded-xl pb-8 pt-0.5'>
-                <div className='mx-[5%] md:grid md:grid-cols-3 lg:grid-cols-3'>
+            <div className='bg-neutral-800 mx-[10%] lg:mx-[20%] mt-[4%] rounded-xl pb-8 pt-0.5'>
+                <div className='md:grid md:grid-cols-3 lg:grid-cols-3'>
                     <Statistic info='4+' name='Years Of Experience'/>
-                    <Statistic info='20+' name='Premium Projects'/>
+                    <Statistic info='50+' name='Premium Projects'/>
                     <Statistic info='7' name='Coding Languages'/>
                 </div>
             </div>

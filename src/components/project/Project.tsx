@@ -28,7 +28,7 @@ export const Project: React.FC<ProjectProps> = (props: ProjectProps) => {
                     <div className='font-bold text-base h-[14vh] mr-[15%]'>
                         {props.description}
 
-                        <div className='hidden md:block mt-14 font-bold text-xl'>
+                        <div className='hidden md:block mt-14 font-bold text-lg'>
                             Written using: {props.tools}
 
                             <br/>

@@ -4,7 +4,6 @@ import { useState } from 'react';
 import { AboutMeSection } from '../../components/about/AboutMeSection';
 import {SkillSet} from "../../components/skill/SkillSet";
 
-const listStyles = 'font-normal text-base list-disc list-inside';
 export const AboutMe:React.FC = () => {
     const [sections] = useState<React.ReactElement[]>([
         <AboutMeSection title='Who am I' contents={
@@ -64,7 +63,7 @@ export const AboutMe:React.FC = () => {
                     'TypeScript',
                     'Python',
                     'C++',
-                    'Laravel'
+                    'PHP'
                 ]}/>
                 <SkillSet name='Frameworks' skills={[
                     'Node.js / Express.js',
