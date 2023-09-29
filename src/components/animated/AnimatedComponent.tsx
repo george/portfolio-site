@@ -20,7 +20,7 @@ export const AnimatedComponent:React.FC<AnimatedComponentProps> = (props: Animat
         <motion.div ref={ref} animate={visible ? {x: props.distance } : 0 } transition={{ transition: 'ease-in',
             duration: props.time }}>
 
-            <div className={`translate-x-[-${props.distance}]`}>
+            <div className={`translate-x-[-5%]`}>
                 {props.children}
             </div>
         </motion.div>
