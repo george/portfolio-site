@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&family=Montserrat:wght@600&&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,7 +6,6 @@
 
 body {
   margin: 0;
-
   font-family: 'Oxygen', sans-serif;
   color: #dddddd;
 
@@ -15,11 +14,15 @@ body {
 }
 
 :root {
-  --primary: #121212;
+  --primary: white;
   --secondary: #ff4162;
 
   background-color: var(--primary);
   scroll-behavior: smooth;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .background-clouds {

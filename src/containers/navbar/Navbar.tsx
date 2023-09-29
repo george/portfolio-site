@@ -4,11 +4,11 @@ import { NavElement } from '../../components/nav/NavElement';
 
 export const Navbar:React.FC = () => {
     return (
-        <nav className='w-[100%] border-b-2 border-[#242424] bg-[#121212] pb-4 sticky top-0 z-10'>
-            <div className='mt-5 max-w-fit flex items-center mx-auto font-extrabold text-white text-xl'>
+        <nav className='w-[100%] bg-white shadow-lg shadow-neutral-400 pb-4 sticky top-0 z-10'>
+            <div className='mt-5 max-w-fit flex items-center mx-auto font-extrabold text-[#121212] text-xl'>
                 <a className='flex' href='#home'>
-                    <img src='/logo.png' className='rounded-full' alt='g-logo' width='48'/>
-                    <span className='ml-2 self-center'>George
+                    <img src='/logo.png' className='rounded-full mr-1' alt='g-logo' width='42'/>
+                    <span className='ml-2 self-center font-montserrat'>George
                         <span className='ml-3 mr-3'>-</span>
                         <span className='font-normal text-lg'>
                             Software Engineer
