@@ -16,16 +16,16 @@ export interface ProjectProps {
 export const Project: React.FC<ProjectProps> = (props: ProjectProps) => {
     return (
         <div>
-            <div className='mb-[min(120px,_25%)] mx-[5%] py-[max(20px,_2%)] pl-[max(20px,_1%)]
-            h-[55vh] md:h-[50vh] font-bold bg-gray-800 rounded-xl'>
-                <div className='text-left text-white'>
+            <div className='mb-[min(120px,_25%)] mx-[5%] lg:mx-[15%] py-[max(20px,_2%)] pl-[max(20px,_1%)]
+            min-h-[55vh] md:min-h-[50vh] font-bold rounded-xl bg-[#242424] shadow-lg shadow-neutral-800'>
+                <div className='text-white'>
                     <p className='font-extrabold text-3xl'>
                         {props.name}
                     </p>
 
                     <br/>
 
-                    <div className='font-bold text-base h-[14vh] mr-[15%]'>
+                    <div className='font-bold text-base min-h-[14vh] mx-[5%]'>
                         {props.description}
 
                         <div className='hidden md:block mt-14 font-bold text-lg'>
@@ -39,7 +39,7 @@ export const Project: React.FC<ProjectProps> = (props: ProjectProps) => {
                         </div>
                     </div>
 
-                    <div className='mt-[17vh] md:mt-[12vh]'>
+                    <div className='mt-[8vh] md:mt-[12vh]'>
                         {props.languages.map((color) => {
                             return (
                                 <div key={color} style={{backgroundColor: color}} className={`rounded-full h-6 w-6 inline-block mr-2`}/>
@@ -52,7 +52,6 @@ export const Project: React.FC<ProjectProps> = (props: ProjectProps) => {
                     </div>
                 </div>
             </div>
-            <p className='legend'>{props.name}</p>
         </div>
     )
 }

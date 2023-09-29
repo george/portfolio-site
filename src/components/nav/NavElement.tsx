@@ -10,7 +10,7 @@ interface NavElementProps {
 export const NavElement:React.FC<NavElementProps> = (props: NavElementProps) => {
     return (
         <li>
-            <a href={props.href} className='hover:text-secondary transition ease-in'>
+            <a href={props.href} className='hover:text-secondary transition ease-in duration-300'>
                 {props.displayName}
             </a>
         </li>
