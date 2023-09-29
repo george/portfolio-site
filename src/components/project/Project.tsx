@@ -17,8 +17,8 @@ export const Project: React.FC<ProjectProps> = (props: ProjectProps) => {
     return (
         <div>
             <div className='mb-[min(120px,_25%)] mx-[5%] lg:mx-[15%] py-[max(20px,_2%)] pl-[max(20px,_1%)]
-            min-h-[55vh] md:min-h-[50vh] font-bold rounded-xl bg-white shadow-lg shadow-neutral-400'>
-                <div className='text-black'>
+            min-h-[55vh] md:min-h-[50vh] font-bold rounded-xl bg-[#242424] shadow-lg shadow-neutral-800'>
+                <div className='text-white'>
                     <p className='font-extrabold text-3xl'>
                         {props.name}
                     </p>

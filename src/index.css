@@ -14,7 +14,7 @@ body {
 }
 
 :root {
-  --primary: white;
+  --primary: #121212;
   --secondary: #ff4162;
 
   background-color: var(--primary);

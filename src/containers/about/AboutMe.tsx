@@ -94,11 +94,11 @@ export const AboutMe:React.FC = () => {
     ]);
 
     return (
-        <div className='h-5/6 text-center text-black background-leaves'>
+        <div className='h-5/6 text-center text-white background-leaves'>
             <div className='text-4xl py-[15%] font-bold' id='about'>
                 About Me
 
-                <div className='mt-5 mx-auto w-[min(600px,_80%)] text-lg font-seibold text-gray-700'>
+                <div className='mt-5 mx-auto w-[min(600px,_80%)] text-lg font-semibold text-gray-200'>
                     I work with a variety of tools, software, and languages across multiple different platforms,
                     and the list is always growing.
 

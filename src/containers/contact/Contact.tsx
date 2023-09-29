@@ -31,7 +31,7 @@ const socialMediaPlatforms:SocialMediaPlatform[] = [
 export const Contact:React.FC = () => {
     return (
         <div className='h-[45vh] mt-[5%] background-clouds' id='contact'>
-            <div className='text-black text-center'>
+            <div className='text-center'>
                 <div className='text-4xl font-extrabold'>
                     Looking to get in touch?
                 </div>
@@ -46,7 +46,7 @@ export const Contact:React.FC = () => {
                     </div>
 
                     <AnimatedComponent time={.75} distance={'5%'}>
-                        <div className='mt-8 mx-[10%] lg:mx-[30%] bg-white shadow-xl shadow-natural-400 rounded-xl'>
+                        <div className='mt-8 mx-[10%] lg:mx-[30%] bg-[#242424] shadow-xl shadow-neutral-800 rounded-xl'>
                             <ul className='px-[4%] inline-flex flex-wrap flex-row gap-x-2 gap-y-2 mb-4'>
                                 { socialMediaPlatforms.map((platform) => {
                                     return <li key={platform.name}>
