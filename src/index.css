@@ -17,7 +17,6 @@ body {
   --primary: #121212;
   --secondary: #ff4162;
 
-  background-color: var(--primary);
   scroll-behavior: smooth;
 }
 

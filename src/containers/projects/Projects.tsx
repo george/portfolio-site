@@ -12,7 +12,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 export const Projects:React.FC = () => {
     return (
-        <div className='text-center background-bubbles'>
+        <div className='overflow-x-hidden text-center background-bubbles'>
             <div className='pt-[15vh] text-4xl font-bold text-white'>
                 Projects
 
