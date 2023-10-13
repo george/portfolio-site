@@ -34,7 +34,8 @@ export const Contact:React.FC = () => {
     const context = React.useContext(themeContext);
 
     return (
-        <div className={`overflow-x-hidden h-[45vh] mt-[5%] background-clouds text-center ${context.secondaryTextColor}`} id='contact'>
+        <div className={`overflow-x-hidden h-[45vh] pt-[5%] background-clouds text-center 
+        ${context.secondaryTextColor} ${context.backgroundColor}`} id='contact'>
             <h1 className={`text-4xl font-extrabold ${context.primaryTextColor}`}>
                 Looking to get in touch?
             </h1>

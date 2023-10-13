@@ -18,8 +18,9 @@ export const Project:React.FC<ProjectProps> = (props: ProjectProps) => {
     const context = React.useContext(themeContext);
 
     return (
-        <div className={`mb-[min(120px,_25%)] mx-[5%] lg:mx-[15%] py-[max(20px,_2%)] pl-[max(20px,_1%)] ${context.primaryObjectColor}`}>
-            <div className={`${context.secondaryTextColor} min-h-[55vh] md:min-h-[50vh] rounded-xl shadow-xl ${context.shadowColor}`}>
+        <div className={`mb-[min(120px,_25%)] mx-[5%] lg:mx-[15%] py-[max(20px,_2%)] pl-[max(20px,_1%)] ${context.primaryObjectColor} 
+        rounded-xl shadow-xl ${context.shadowColor}`}>
+            <div className={`${context.secondaryTextColor} min-h-[55vh] md:min-h-[50vh]`}>
                 <p className={`${context.primaryTextColor} font-extrabold text-3xl`}>
                     {props.name}
                 </p>

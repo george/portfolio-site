@@ -10,9 +10,13 @@ import { AnimatedComponent } from '../../components/animated/AnimatedComponent';
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
+import { themeContext } from '../../context/ThemeContext';
+
 export const Projects:React.FC = () => {
+    const context = React.useContext(themeContext);
+
     return (
-        <div className='overflow-x-hidden text-center background-bubbles'>
+        <div className={`overflow-x-hidden text-center background-bubbles ${context.backgroundColor}`}>
             <div className='pt-[15vh] text-4xl font-bold text-white'>
                 Projects
 

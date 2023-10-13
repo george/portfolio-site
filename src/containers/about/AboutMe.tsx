@@ -98,7 +98,7 @@ export const AboutMe:React.FC = () => {
     ]);
 
     return (
-        <div className={`overflow-x-hidden h-5/6 text-center ${context.primaryTextColor} background-leaves`}>
+        <div className={`overflow-x-hidden h-5/6 text-center ${context.primaryTextColor} ${context.backgroundColor} background-leaves`}>
             <div className='text-4xl py-[15%] font-bold' id='about'>
                 About Me
 
@@ -112,7 +112,7 @@ export const AboutMe:React.FC = () => {
                 </div>
 
                 <AnimatedComponent time={.75} distance={'5%'}>
-                    <div className={`mx-[5%] mt-5 w-[90%] rounded-xl bg-white ${context.shadowColor} ${context.secondaryTextColor} shadow-xl`}>
+                    <div className={`mx-[5%] mt-5 w-[90%] rounded-xl ${context.primaryObjectColor} ${context.shadowColor} ${context.secondaryTextColor} shadow-xl`}>
                         <div className='md:grid md:grid-cols-3 lg:grid-cols-3'>
                             {sections.map(section => {
                                 return <div className='my-2' key={section.props.title}>{section}</div>
