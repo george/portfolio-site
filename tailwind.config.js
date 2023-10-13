@@ -11,11 +11,11 @@ module.exports = {
       },
       dropShadow: {
         glow: [
-          "0 0px 1px rgba(255,255, 255, 0.35)",
+          "0 0px 1px rgba(255,255, 255, 0.15)",
         ]
       }
     }
   },
-  plugins: [],
+  plugins: []
 }
 

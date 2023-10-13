@@ -8,12 +8,12 @@ import { Projects } from './containers/projects/Projects';
 
 export const App:React.FC = () => {
     return (
-      <div>
+      <>
           <Navbar/>
           <Hero/>
           <AboutMe/>
           <Projects/>
           <Contact/>
-      </div>
+      </>
   );
 }

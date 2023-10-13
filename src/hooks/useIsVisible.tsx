@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { useState, useEffect, MutableRefObject } from 'react';
 
 export function useIsVisible(ref: MutableRefObject<any>): boolean {
