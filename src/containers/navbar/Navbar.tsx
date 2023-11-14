@@ -9,7 +9,7 @@ export const Navbar:React.FC = () => {
     const context = React.useContext(themeContext);
 
     return (
-        <nav className={`w-[100%] ${context.backgroundColor} shadow-md ${context.shadowColor} pb-4 sticky top-0 z-10`}>
+        <nav className={`w-[100%] ${context.backgroundColor} shadow-sm ${context.shadowColor} pb-4 sticky top-0 z-10`}>
             <div className={`pt-2 max-w-fit flex items-center mx-auto font-extrabold ${context.secondaryTextColor} text-xl`}>
                 <a className='flex' href='#home'>
                     <img src='/logo.png' className='rounded-full mr-1' alt='g-logo' width='42'/>

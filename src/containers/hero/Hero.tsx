@@ -25,15 +25,16 @@ export const Hero:React.FC = () => {
             </div>
 
             <div className={`${context.secondaryTextColor} mx-[10%] lg:mx-[20%] mt-[4%] rounded-xl pb-8 pt-0.5`}>
-                <div className={`${context.primaryObjectColor} md:grid shadow-xl ${context.shadowColor} 
+                <div className={`${context.primaryObjectColor} md:grid shadow-md ${context.shadowColor} 
                 rounded-xl shadow-md:grid-cols-3 lg:grid-cols-3 pb-4`}>
                     <Statistic info='4+' name='Years Of Experience'/>
                     <Statistic info='50+' name='Premium Projects'/>
                     <Statistic info='7+' name='Coding Languages'/>
                 </div>
             </div>
-            <button className='text-center mt-10 bg-secondary px-[max(2%,_40px)] py-[max(1%,_15px)]
-            font-bold text-2xl text-neutral-100 rounded-xl'>
+
+            <button className='text-center mt-10 bg-secondary px-[max(1%,_30px)] py-[max(1%,_12px)]
+            font-bold text-xl text-neutral-100 rounded-xl transition-transform hover:scale-105 active:scale-95'>
                 <a href='#about'>
                     Get to know me
                 </a>
