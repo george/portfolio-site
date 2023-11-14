@@ -12,7 +12,7 @@ interface ThemeProperties {
 }
 
 const DarkTheme:ThemeProperties = {
-    backgroundColor: 'bg-[#121212]',
+    backgroundColor: 'bg-[#161616]',
     shadowColor: 'shadow-neutral-800',
 
     primaryColor: '#ff4162',
@@ -31,7 +31,7 @@ const LightTheme:ThemeProperties = {
     secondaryTextColor: 'text-gray-600'
 };
 
-let currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') === 'light' ? LightTheme : DarkTheme : LightTheme;
+let currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') === 'light' ? LightTheme : DarkTheme : DarkTheme;
 
 export const themeContext:Context<ThemeProperties> = createContext(currentTheme);
 
@@ -39,5 +39,6 @@ export const updateTheme = () => {
     currentTheme = (currentTheme === DarkTheme ? LightTheme : DarkTheme);
 
     localStorage.setItem('theme', currentTheme === DarkTheme ? 'dark' : 'light');
+
     window.location.reload();
 }

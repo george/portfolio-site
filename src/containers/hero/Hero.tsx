@@ -32,7 +32,8 @@ export const Hero:React.FC = () => {
                     <Statistic info='7+' name='Coding Languages'/>
                 </div>
             </div>
-            <button className='text-center mt-10 bg-secondary px-[max(2%,_40px)] py-[max(1%,_15px)] font-bold text-2xl text-neutral-100 rounded-xl'>
+            <button className='text-center mt-10 bg-secondary px-[max(2%,_40px)] py-[max(1%,_15px)]
+            font-bold text-2xl text-neutral-100 rounded-xl'>
                 <a href='#about'>
                     Get to know me
                 </a>
